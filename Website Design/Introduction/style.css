@@ -1,0 +1,76 @@
+.box {
+  height: 400px;
+  padding: 20px;
+  color: #fff;
+  background: deepskyblue;
+}
+
+.margin-top-80 {
+  margin-top: 80px;
+}
+
+
+.titlecustom {
+	color:DarkBlue;
+  	font-size: 150%;
+}
+
+.titlecustom:hover {
+	color: DarkBlue;
+	text-shadow:2px 2px Yellow;
+}
+
+.title {
+	font-size: 150%;
+	text-align: center;
+}
+
+.imageclass {
+	max-width: 100%;
+	float: left;
+  	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+}
+
+.frontimageclass {
+	max-width: 30%;
+	float: left;
+  	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+}
+.frontparagraph {
+	style="margin-top: 20px;"
+}
+
+.allcolbg {
+
+}
+
+.sticky-footer {
+  position: fixed;
+  bottom: 	0px;
+  margin-right: auto;
+  margin-left: auto;
+left: 0;
+right: 0;
+}
+
+.h1footer {
+	font-size: 100%;
+	text-align: center;
+}
+
+.sidepageimage {
+	max-width: 100%;
+	float: left;
+  	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+}
+body {
+   margin: 0px;
+   min-height: 100%;
+   width: 100%;
+}

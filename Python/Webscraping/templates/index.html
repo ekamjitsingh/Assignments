@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Cool Mars Information</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="jumbotron text-center">
+      <h1>Interested in Mars?</h1>
+      <p>Well then, what are you waiting for?</p>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Click here for cool Mars data!</a></p>
+    </div>
+    <h2>Latest Mars News:</h2>
+    <h3>{{ scraped_info.title }}</h3>
+    <p>{{ scraped_info.paragraph }}</p>
+    <div class="row">
+        <div class="col-9">
+            <h2>Featured Mars Image:</h2>
+            <img src={{ scraped_info.featured_img_url }}>
+        </div>
+        <div class="col-3">
+            <h3>Current Weather on Mars:</h3>
+            <p>{{ scraped_info.tweet }}</p>
+            <br>
+            <h3>Mars Facts:</h3>
+            <p>{{ scraped_info.mars_table|safe }}</p>
+        </div>
+    </div>
+    <h2>Mars Hemispheres</h2>
+    <div class="row">
+        <div class="col-6">
+            <img src={{ scraped_info.hemispheres[0].img_url }} width="420">
+            <h2>{{ scraped_info.hemispheres[0].title }}</h2>
+        </div>
+        <div class="col-6">
+            <img src={{ scraped_info.hemispheres[1].img_url }} width="420">
+            <h2>{{ scraped_info.hemispheres[1].title }}</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <img src={{ scraped_info.hemispheres[2].img_url }} width="420">
+            <h2>{{ scraped_info.hemispheres[2].title }}</h2>
+        </div>
+        <div class="col-6">
+            <img src={{ scraped_info.hemispheres[3].img_url }} width="420">
+            <h2>{{ scraped_info.hemispheres[3].title }}</h2>
+        </div>
+    </div>  
+  </div>
+</body>
+
+</html>
